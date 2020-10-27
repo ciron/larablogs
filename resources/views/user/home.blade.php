@@ -1,23 +1,13 @@
-@extends('layouts.app')
+@extends('user.master')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __(' User Dashboard') }}</div>
+@section('user_content')
+  <span class="breadcrumb-item active">Blank Page</span>
+      </nav>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+      <div class="sl-pagebody">
+        <div class="sl-page-title">
+          <h5>Blank Page</h5>
+          <p>This is a starter page</p>
+        </div><!-- sl-page-title -->
 
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection
